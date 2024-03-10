@@ -4,10 +4,15 @@
     --fontSizeLinks: 18px;
     --fontFamily: Helvetica, Arial;
     --fontWeightBold: 600;
+    /*Letras contenedor Whats on s*/
+    --
 }
 
 body{
     margin: 0;
+    width: 100vp;
+    height: 100vh;
+    font-family: var(--fontFamily);
 }
 
 header, #linkscontainer {
@@ -23,18 +28,50 @@ header{
 
 #linkscontainer{
     gap: 0px 50px;
+    letter-spacing: 2px;
 }
 
 .headerlinks{
     text-decoration: none;
     color: var(--colorLinks);
     font-size: var(--fontSizeLinks);
-    font-family: var(--fontFamily);
     font-weight: var(--fontWeightBold);
 
 }
 
-#bannerConatiner{
+#bannerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url(../img/landing.jpg);
-    height: 50%;
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#textBannerContainer{
+    text-align: center;
+    color: whitesmoke;
+}
+
+h1, .fontSecondary{
+    letter-spacing: 2px;
+}
+
+h1{
+    margin-bottom: -3px;
+    font-size: 4em;
+}
+
+.fontSecondary{
+    font-size: 20px;
+}
+
+.fontSecondaryTwo{
+    margin-top: -16px;
+}
+
+h2{
+
 }
