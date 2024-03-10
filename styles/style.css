@@ -1,0 +1,40 @@
+:root {
+    --colorLinks: black;
+    --white: #ffffff; 
+    --fontSizeLinks: 18px;
+    --fontFamily: Helvetica, Arial;
+    --fontWeightBold: 600;
+}
+
+body{
+    margin: 0;
+}
+
+header, #linkscontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header{
+    justify-content: space-between;
+    margin: 2vh 4vh;
+}
+
+#linkscontainer{
+    gap: 0px 50px;
+}
+
+.headerlinks{
+    text-decoration: none;
+    color: var(--colorLinks);
+    font-size: var(--fontSizeLinks);
+    font-family: var(--fontFamily);
+    font-weight: var(--fontWeightBold);
+
+}
+
+#bannerConatiner{
+    background-image: url(../img/landing.jpg);
+    height: 50%;
+}
